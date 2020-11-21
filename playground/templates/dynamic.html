@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamic Page</title>
+        <link rel="stylesheet" href="static/style.css">
+    </head>
+    <body class="black white">
+        <h2 class="black2">{{greeting}} {{name}}</h2>
+        <h3>Hint: Highlight above to see a message!</h3>
+        <h2 class="red2">Liked Icecream Flavors:</h2>
+        {% for icecream in icecream %}
+        <p>{{icecream}}</p>
+        {% endfor %}
+        <h2 class="orange2">Places I've Traveled To:</h2>
+    </body>
+</html>
